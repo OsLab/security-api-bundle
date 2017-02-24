@@ -1,0 +1,7 @@
+services:
+    oslab_security_api.security.authentication.authenticator:
+        class: OsLab\SecurityApiBundle\Security\Authentication\SimplePreAuthenticator
+        arguments: ['%oslab_security_api.authentication.key_name%', '%oslab_security_api.authentication.method%']
+
+    oslab_security_api.security.user.provider:
+        class: OsLab\SecurityApiBundle\Security\User\InMemoryApiUserProvider
