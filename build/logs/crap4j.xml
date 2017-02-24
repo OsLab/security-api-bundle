@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2017-02-24 15:49:17</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>21</methodCount>
+    <crapMethodCount>1</crapMethodCount>
+    <crapLoad>6</crapLoad>
+    <totalCrap>116.15</totalCrap>
+    <crapMethodPercent>4.76</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection</package>
+      <className>Configuration</className>
+      <methodName>getConfigTreeBuilder</methodName>
+      <methodSignature>getConfigTreeBuilder()</methodSignature>
+      <fullMethod>getConfigTreeBuilder()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection</package>
+      <className>Configuration</className>
+      <methodName>addAuthenticationSection</methodName>
+      <methodSignature>addAuthenticationSection(ArrayNodeDefinition $node)</methodSignature>
+      <fullMethod>addAuthenticationSection(ArrayNodeDefinition $node)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection</package>
+      <className>OsLabSecurityApiExtension</className>
+      <methodName>load</methodName>
+      <methodSignature>load(array $configs, ContainerBuilder $container)</methodSignature>
+      <fullMethod>load(array $configs, ContainerBuilder $container)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection</package>
+      <className>OsLabSecurityApiExtension</className>
+      <methodName>remapParametersNamespaces</methodName>
+      <methodSignature>remapParametersNamespaces(array $config, ContainerBuilder $container, array $namespaces)</methodSignature>
+      <fullMethod>remapParametersNamespaces(array $config, ContainerBuilder $container, array $namespaces)</fullMethod>
+      <crap>42</crap>
+      <complexity>6</complexity>
+      <coverage>0</coverage>
+      <crapLoad>6</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider</package>
+      <className>InMemoryApiFactory</className>
+      <methodName>create</methodName>
+      <methodSignature>create(ContainerBuilder $container, $id, $config)</methodSignature>
+      <fullMethod>create(ContainerBuilder $container, $id, $config)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider</package>
+      <className>InMemoryApiFactory</className>
+      <methodName>getKey</methodName>
+      <methodSignature>getKey()</methodSignature>
+      <fullMethod>getKey()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider</package>
+      <className>InMemoryApiFactory</className>
+      <methodName>addConfiguration</methodName>
+      <methodSignature>addConfiguration(NodeDefinition $node)</methodSignature>
+      <fullMethod>addConfiguration(NodeDefinition $node)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider</package>
+      <className>InMemoryApiFactory</className>
+      <methodName>anonymous function</methodName>
+      <methodSignature>anonymous function ($v)</methodSignature>
+      <fullMethod>anonymous function ($v)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle</package>
+      <className>OsLabSecurityApiBundle</className>
+      <methodName>build</methodName>
+      <methodSignature>build(ContainerBuilder $container)</methodSignature>
+      <fullMethod>build(ContainerBuilder $container)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\Authentication</package>
+      <className>AuthenticationFailureHandler</className>
+      <methodName>onAuthenticationFailure</methodName>
+      <methodSignature>onAuthenticationFailure(Request $request, AuthenticationException $exception)</methodSignature>
+      <fullMethod>onAuthenticationFailure(Request $request, AuthenticationException $exception)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\Authentication</package>
+      <className>SimplePreAuthenticator</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($keyName, $method)</methodSignature>
+      <fullMethod>__construct($keyName, $method)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\Authentication</package>
+      <className>SimplePreAuthenticator</className>
+      <methodName>createToken</methodName>
+      <methodSignature>createToken(Request $request, $providerKey)</methodSignature>
+      <fullMethod>createToken(Request $request, $providerKey)</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\Authentication</package>
+      <className>SimplePreAuthenticator</className>
+      <methodName>supportsToken</methodName>
+      <methodSignature>supportsToken(TokenInterface $token, $providerKey)</methodSignature>
+      <fullMethod>supportsToken(TokenInterface $token, $providerKey)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\Authentication</package>
+      <className>SimplePreAuthenticator</className>
+      <methodName>authenticateToken</methodName>
+      <methodSignature>authenticateToken(TokenInterface $token, UserProviderInterface $userProvider, $providerKey)</methodSignature>
+      <fullMethod>authenticateToken(TokenInterface $token, UserProviderInterface $userProvider, $providerKey)</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(array $users = [])</methodSignature>
+      <fullMethod>__construct(array $users = [])</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>getUsernameByApiKey</methodName>
+      <methodSignature>getUsernameByApiKey($apiKey)</methodSignature>
+      <fullMethod>getUsernameByApiKey($apiKey)</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>loadUserByUsername</methodName>
+      <methodSignature>loadUserByUsername($username)</methodSignature>
+      <fullMethod>loadUserByUsername($username)</fullMethod>
+      <crap>1.12</crap>
+      <complexity>1</complexity>
+      <coverage>50</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>createUser</methodName>
+      <methodSignature>createUser(UserInterface $user)</methodSignature>
+      <fullMethod>createUser(UserInterface $user)</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>refreshUser</methodName>
+      <methodSignature>refreshUser(UserInterface $user)</methodSignature>
+      <fullMethod>refreshUser(UserInterface $user)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>supportsClass</methodName>
+      <methodSignature>supportsClass($class)</methodSignature>
+      <fullMethod>supportsClass($class)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>OsLab\SecurityApiBundle\Security\User</package>
+      <className>InMemoryApiUserProvider</className>
+      <methodName>getUser</methodName>
+      <methodSignature>getUser($username)</methodSignature>
+      <fullMethod>getUser($username)</fullMethod>
+      <crap>2.03</crap>
+      <complexity>2</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

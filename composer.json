@@ -1,0 +1,37 @@
+{
+    "name": "oslab/security-api-bundle",
+    "description": "A bundle for securing ReST api calls.",
+    "type": "symfony-bundle",
+    "keywords": ["api", "security", "token"],
+    "homepage": "https://github.com/OsLab/security-api-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael COULLERET",
+            "email": "michael@coulleret.pro",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Florent DESPIERRES",
+            "email": "orions07@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.8",
+        "symfony/security": "~2.8"
+    },
+   "require-dev": {
+       "phpunit/phpunit": "^5.3"
+    },
+    "autoload": {
+        "psr-4" : { "OsLab\\SecurityApiBundle\\" : "" }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
