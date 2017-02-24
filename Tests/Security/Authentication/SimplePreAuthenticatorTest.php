@@ -41,7 +41,7 @@ class SimplePreAuthenticatorTest extends \PHPUnit_Framework_TestCase
         $request = new Request();
         $headerBag = new HeaderBag();
         $headerBag->add(['keyName' => 'abcd']);
-        $request->headers =$headerBag;
+        $request->headers = $headerBag;
 
         $simplePreAuthenticator = new SimplePreAuthenticator('keyName', 'header');
         $simplePreAuthenticator->createToken($request, $this->anything());

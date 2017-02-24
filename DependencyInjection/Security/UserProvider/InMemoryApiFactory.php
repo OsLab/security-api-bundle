@@ -74,11 +74,9 @@ class InMemoryApiFactory implements UserProviderFactoryInterface
                         ->children()
                             ->scalarNode('password')->defaultValue(uniqid('', true))->end()
                             ->arrayNode('roles')
-                                ->beforeNormalization()->ifString()->then(
-                                    function ($v) {
-                                        return preg_split('/\s*,\s*/', $v);
-                                    }
-                                )
+                                ->beforeNormalization()->ifString()->then(function ($v) {
+                                    return preg_split('/\s*,\s*/', $v);
+                                })
                                 ->end()
                                 ->prototype('scalar')->end()
                             ->end()
