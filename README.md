@@ -93,7 +93,7 @@ Finally, enable the bundle in the kernel:
 
 ## Credits
 
-* [All contributors](https://github.com/OsLab/slim-monolog/graphs/contributors)
+* [All contributors](https://github.com/OsLab/security-api-bundle/graphs/contributors)
 
 ## License
 
