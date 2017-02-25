@@ -1,6 +1,6 @@
 OsLab security API bundle
 ========================
-> Authentification API REST
+> A bundle for securing ReST api calls.
 
 [![Build Status](https://travis-ci.org/OsLab/security-api-bundle.svg?branch=master)](https://travis-ci.org/OsLab/security-api-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/?branch=master)
@@ -14,13 +14,13 @@ Introduction
 -------------
 This bundle allows you to add an authentication mechanism with a token easily to your APIs.
 
-Once you've configured everything, you'll be able to authenticate by adding an apikey parameter to the query string, like http://example.com/api/key?apikey=513e45b56f637b51d194a7524f2d51f2.
-Or add through a header your token.
+Once you've configured everything, you'll be able to authenticate by adding an apikey parameter to the query string, like http://example.com/api/key?apikey=513e45b56f637b51d194a7524f2d51f2 
+or add through a header your token.
 
 Installation
 ------------
 
-### Step 1: Download OsLabSlimMonolog using [Composer](http://getcomposer.org)
+### Step 1: Download OsLabSecurityApiBundle using [Composer](http://getcomposer.org)
 
 Require the bundle with composer:
 
