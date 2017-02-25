@@ -8,6 +8,7 @@ OsLab security API bundle
 [![Total Downloads](https://poser.pugx.org/OsLab/security-api-bundle/downloads)](https://packagist.org/packages/OsLab/security-api-bundle)
 [![Latest Stable Version](https://poser.pugx.org/OsLab/security-api-bundle/v/stable)](https://packagist.org/packages/OsLab/security-api-bundle)
 [![License](https://poser.pugx.org/OsLab/security-api-bundle/license)](https://packagist.org/packages/OsLab/SupervisorBundle)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/21afc65a-16de-463c-9897-e3deb06ac615/mini.png)](https://insight.sensiolabs.com/projects/21afc65a-16de-463c-9897-e3deb06ac615)
 
 Introduction
 -------------
@@ -30,7 +31,6 @@ Or you can add it in the composer.json. Just check Packagist for the version you
 ```json
     {
         "require": {
-            // ...
             "oslab/security-api-bundle": "dev-master"
         }
     }
