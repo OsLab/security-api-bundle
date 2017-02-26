@@ -57,7 +57,6 @@ All Pull Requests must include the following header:
 | Tests pass?   | yes
 | Fixed tickets | #1234, #5678
 | License       | MIT
-| Doc PR        | api-platform/doc#1234
 ```
 
 ## Squash your commits
