@@ -101,7 +101,7 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
         $username = $userProvider->getUsernameByApiKey($apiKey);
 
         if (isset($username) === false && strlen($username) <= 0) {
-            $exception = new UsernameNotFoundException('API Key "%s" does not exist.', $apiKey);
+            $exception = new UsernameNotFoundException(sprintf('API Key "%s" does not exist.', $apiKey));
             $exception->setUsername($username);
 
             throw $exception;
