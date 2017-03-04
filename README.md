@@ -26,12 +26,12 @@ Require the bundle with composer:
 
     $ composer require oslab/security-api-bundle
 
-Or you can add it in the composer.json. Just check Packagist for the version you want to install (in the following example, we used "dev-master") and add it to your composer.json:
+Or you can add it in the composer.json. Just check Packagist for the version you want to install (in the following example, we used "1.0") and add it to your composer.json:
 
 ```json
     {
         "require": {
-            "oslab/security-api-bundle": "dev-master"
+            "oslab/security-api-bundle": ">1.0"
         }
     }
 ```
