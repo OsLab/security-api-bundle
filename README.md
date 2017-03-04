@@ -24,7 +24,7 @@ Installation
 
 Require the bundle with composer:
 
-    $ composer require oslab/security-api-bundle
+    $ composer require oslab/security-api-bundle:">1.0"
 
 Or you can add it in the composer.json. Just check Packagist for the version you want to install (in the following example, we used "1.0") and add it to your composer.json:
 
