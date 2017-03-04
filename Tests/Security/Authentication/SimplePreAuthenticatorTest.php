@@ -12,11 +12,11 @@ namespace OsLab\SecurityApiBundle\Tests\Security\Authentication;
 use OsLab\SecurityApiBundle\Security\Authentication\SimplePreAuthenticator;
 use OsLab\SecurityApiBundle\Security\User\InMemoryApiUserProvider;
 use Symfony\Component\HttpFoundation\HeaderBag;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\ParameterBag;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken;
-use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\User;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
