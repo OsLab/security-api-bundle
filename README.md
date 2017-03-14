@@ -14,7 +14,7 @@ Introduction
 -------------
 This bundle allows you to add an authentication mechanism with a token easily to your APIs.
 
-Once you've configured everything, you'll be able to authenticate by adding an apikey parameter to the query string, like http://example.com/api/key?apikey=513e45b56f637b51d194a7524f2d51f2 
+Once you've configured everything, you'll be able to authenticate by adding an key parameter to the query string, like http://example.com/api/users?key=1x4c40nwh96080gk70f7k5awz9k6tczqs3jr01z94849n 
 or add through a header your token.
 
 Installation
@@ -55,6 +55,11 @@ Finally, enable the bundle in the kernel:
 ### Step 3: Configure your application's security.yml
 
 ```yml
+    role_hierarchy:
+        ROLE_API: ROLE_API
+
+    ...
+
     providers:
         chain_provider:
             chain:
@@ -71,7 +76,7 @@ Finally, enable the bundle in the kernel:
                     external_api_customer:
                         password: 'j6eef2w0689a6if50c365v2zq0c855ywgyt106j2b6q5h'
                         roles: 'ROLE_API'
-         ...
+        ...
 
     firewalls:
         ...
@@ -82,7 +87,10 @@ Finally, enable the bundle in the kernel:
             simple_preauth:
                 authenticator: oslab_security_api.security.authentication.authenticator
             provider: api_provider
-            
+
+        main:
+            anonymous: ~
+
         ...
         
     access_control:
