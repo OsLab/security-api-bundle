@@ -11,9 +11,9 @@
 
 namespace OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\UserProvider\UserProviderFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
 use Symfony\Component\DependencyInjection\Reference;
 
@@ -74,7 +74,7 @@ class InMemoryApiFactory implements UserProviderFactoryInterface
                         ->children()
                             ->scalarNode('password')->defaultValue(uniqid('', true))->end()
                             ->arrayNode('roles')
-                                ->beforeNormalization()->ifString()->then(function ($v) {
+                                ->beforeNormalization()->ifString()->then(function($v) {
                                     return preg_split('/\s*,\s*/', $v);
                                 })
                                 ->end()
