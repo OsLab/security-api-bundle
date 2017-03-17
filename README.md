@@ -4,7 +4,7 @@ OsLab security API bundle
 
 [![Build Status](https://travis-ci.org/OsLab/security-api-bundle.svg?branch=master)](https://travis-ci.org/OsLab/security-api-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/OsLab/security-api-bundle/badge.svg)](https://coveralls.io/github/OsLab/security-api-bundle)
+[![Code Coverage](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/?branch=master)
 [![Total Downloads](https://poser.pugx.org/OsLab/security-api-bundle/downloads)](https://packagist.org/packages/OsLab/security-api-bundle)
 [![Latest Stable Version](https://poser.pugx.org/OsLab/security-api-bundle/v/stable)](https://packagist.org/packages/OsLab/security-api-bundle)
 [![License](https://poser.pugx.org/OsLab/security-api-bundle/license)](https://packagist.org/packages/OsLab/SupervisorBundle)
