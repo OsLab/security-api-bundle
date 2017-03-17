@@ -133,6 +133,6 @@ class SimplePreAuthenticatorTest extends \PHPUnit_Framework_TestCase
         ;
 
         $simplePreAuthenticator = new SimplePreAuthenticator('keyName', 'header');
-        $preAuthenticatedToken = $simplePreAuthenticator->authenticateToken($token, $userProvider, 'oslab');
+        $simplePreAuthenticator->authenticateToken($token, $userProvider, 'oslab');
     }
 }
