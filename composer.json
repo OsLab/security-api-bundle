@@ -27,7 +27,6 @@
     "autoload": {
         "psr-4" : { "OsLab\\SecurityApiBundle\\" : "" }
     },
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
