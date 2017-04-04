@@ -13,8 +13,8 @@ namespace OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider;
 
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\UserProvider\UserProviderFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
-use Symfony\Component\DependencyInjection\ChildDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\DefinitionDecorator;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
@@ -34,13 +34,13 @@ class InMemoryApiFactory implements UserProviderFactoryInterface
      */
     public function create(ContainerBuilder $container, $id, $config)
     {
-        $definition = $container->setDefinition($id, new ChildDefinition('oslab_security_api.security.user.provider'));
+        $definition = $container->setDefinition($id, new DefinitionDecorator('oslab_security_api.security.user.provider'));
 
         foreach ($config['users'] as $username => $user) {
             $userId = $id.'_'.$username;
 
             $container
-                ->setDefinition($userId, new ChildDefinition('security.user.provider.in_memory.user'))
+                ->setDefinition($userId, new DefinitionDecorator('security.user.provider.in_memory.user'))
                 ->setArguments(array($username, (string) $user['password'], $user['roles']))
             ;
 
