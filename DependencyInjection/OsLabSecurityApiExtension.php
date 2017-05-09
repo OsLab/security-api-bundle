@@ -17,7 +17,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
 /**
- * Class load bundle extension
+ * Class load bundle extension.
  *
  * @author Michael COULLERET <michael@coulleret.pro>
  * @author Florent DESPIERRES <orions07@gmail.com>

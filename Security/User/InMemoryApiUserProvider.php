@@ -18,7 +18,7 @@ use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 
 /**
- * Class InMemoryApiUserProvider
+ * Class InMemoryApiUserProvider.
  *
  * @author Michael COULLERET <michael@coulleret.pro>
  * @author Florent DESPIERRES <orions07@gmail.com>

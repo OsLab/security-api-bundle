@@ -21,7 +21,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Http\Authentication\SimplePreAuthenticatorInterface;
 
 /**
- * Class SimplePreAuthenticator
+ * Class SimplePreAuthenticator.
  *
  * @author Michael COULLERET <michael@coulleret.pro>
  * @author Florent DESPIERRES <orions07@gmail.com>
