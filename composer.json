@@ -8,7 +8,7 @@
     "authors": [
         {
             "name": "Michael COULLERET",
-            "email": "michael@coulleret.pro",
+            "email": "michael.coulleret@gmail.com",
             "role": "Lead Developer"
         },
         {
@@ -22,7 +22,8 @@
         "symfony/security-bundle": "^2.7 || ^3.0"
     },
    "require-dev": {
-       "phpunit/phpunit": "^5.7"
+       "phpunit/phpunit": "^5.7",
+       "friendsofphp/php-cs-fixer" : "^2.0"
     },
     "autoload": {
         "psr-4" : { "OsLab\\SecurityApiBundle\\" : "" }

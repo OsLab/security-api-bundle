@@ -11,15 +11,15 @@
 
 namespace OsLab\SecurityApiBundle\DependencyInjection;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * Class load bundle extension
+ * Class load bundle extension.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class OsLabSecurityApiExtension extends Extension
@@ -35,17 +35,15 @@ class OsLabSecurityApiExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('security.yml');
 
-        $this->remapParametersNamespaces($config, $container, array('authentication' => "oslab_security_api.authentication.%s"));
+        $this->remapParametersNamespaces($config, $container, ['authentication' => 'oslab_security_api.authentication.%s']);
     }
 
     /**
      * Maps parameters to add them in container.
      *
-     * @param array            $config     The gloabl config of this bundle.
-     * @param ContainerBuilder $container  The container for dependency injection.
-     * @param array            $namespaces Config namespaces to add as parameters in the container.
-     *
-     * @return void
+     * @param array            $config     the global config of this bundle
+     * @param ContainerBuilder $container  the container for dependency injection
+     * @param array            $namespaces config namespaces to add as parameters in the container
      */
     protected function remapParametersNamespaces(array $config, ContainerBuilder $container, array $namespaces)
     {

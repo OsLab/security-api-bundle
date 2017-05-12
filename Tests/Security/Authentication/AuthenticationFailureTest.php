@@ -15,9 +15,9 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
 /**
- * Class AuthenticationFailureTest
+ * Unit test for the AuthenticationFailureTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class AuthenticationFailureTest extends \PHPUnit_Framework_TestCase

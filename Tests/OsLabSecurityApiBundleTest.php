@@ -14,9 +14,9 @@ use Symfony\Bundle\SecurityBundle\DependencyInjection\SecurityExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class OsLabSecurityApiBundleTest
+ * Unit test for the OsLabSecurityApiBundleTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class OsLabSecurityApiBundleTest extends \PHPUnit_Framework_TestCase

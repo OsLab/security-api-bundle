@@ -21,9 +21,9 @@ use Symfony\Component\Security\Core\User\User;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * Class SimplePreAuthenticatorTest
+ * Unit test for the SimplePreAuthenticatorTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class SimplePreAuthenticatorTest extends \PHPUnit_Framework_TestCase

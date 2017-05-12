@@ -16,9 +16,9 @@ use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Symfony\Component\Security\Core\User\User;
 
 /**
- * Class InMemoryApiProviderTest
+ * Unit test for the InMemoryApiProviderTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class InMemoryApiProviderTest extends \PHPUnit_Framework_TestCase
@@ -47,7 +47,7 @@ class InMemoryApiProviderTest extends \PHPUnit_Framework_TestCase
     {
         $user = $this->userProvider->getUsernameByApiKey('j6eef2w0689a6if50c365v2zq0c855ywgyt106j2b6q5h');
 
-        $this->assertEquals($user, 'cde');
+        $this->assertSame($user, 'cde');
     }
 
     public function testShouldLoadUserByUsername2()
@@ -62,7 +62,7 @@ class InMemoryApiProviderTest extends \PHPUnit_Framework_TestCase
         $user = $this->userProvider->loadUserByUsername('api_1');
 
         $this->assertInstanceOf(User::class, $user);
-        $this->assertEquals($user->getRoles(), ['ROLE_API']);
+        $this->assertSame($user->getRoles(), ['ROLE_API']);
     }
 
     public function testCreateUserLogicException()

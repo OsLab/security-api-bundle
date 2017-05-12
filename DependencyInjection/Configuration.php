@@ -11,14 +11,14 @@
 
 namespace OsLab\SecurityApiBundle\DependencyInjection;
 
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
-use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 
 /**
  * This class validates configuration.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class Configuration implements ConfigurationInterface
@@ -38,9 +38,7 @@ class Configuration implements ConfigurationInterface
     /**
      * Adds the config of soap to global config.
      *
-     * @param ArrayNodeDefinition $node The root element for the config nodes.
-     *
-     * @return void
+     * @param ArrayNodeDefinition $node the root element for the config nodes
      */
     protected function addAuthenticationSection(ArrayNodeDefinition $node)
     {
@@ -53,7 +51,7 @@ class Configuration implements ConfigurationInterface
                     ->isRequired()
                     ->cannotBeEmpty()
                     ->validate()
-                    ->ifNotInArray(array('header', 'query'))
+                    ->ifNotInArray(['header', 'query'])
                         ->thenInvalid('Invalid method for security %s')
                     ->end()
                 ->end()

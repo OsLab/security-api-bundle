@@ -13,9 +13,9 @@ use OsLab\SecurityApiBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 
 /**
- * Class ConfigurationTest
+ * Unit test for the ConfigurationTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class ConfigurationTest extends \PHPUnit_Framework_TestCase
