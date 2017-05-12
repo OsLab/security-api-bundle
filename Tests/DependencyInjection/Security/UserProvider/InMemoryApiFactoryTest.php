@@ -14,9 +14,9 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class InMemoryApiFactoryTest
+ * Unit test for the InMemoryApiFactory.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class InMemoryApiFactoryTest extends \PHPUnit_Framework_TestCase
@@ -25,8 +25,7 @@ class InMemoryApiFactoryTest extends \PHPUnit_Framework_TestCase
         'users' => [
             'user' => [
                 'password' => 'abc',
-                'roles'    => ['ROLE_USER'],
-
+                'roles' => ['ROLE_USER'],
             ],
         ],
     ];
@@ -47,7 +46,7 @@ class InMemoryApiFactoryTest extends \PHPUnit_Framework_TestCase
 
         $key = $inMemoryApiFactory->getKey();
 
-        $this->assertEquals($key, 'memory_api');
+        $this->assertSame($key, 'memory_api');
     }
 
     public function testAddConfiguration()

@@ -10,13 +10,13 @@
 namespace OsLab\SecurityApiBundle;
 
 use OsLab\SecurityApiBundle\DependencyInjection\Security\UserProvider\InMemoryApiFactory;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class OsLabSecurityApiBundle
+ * An implementation of BundleInterface.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  */
 class OsLabSecurityApiBundle extends Bundle
 {

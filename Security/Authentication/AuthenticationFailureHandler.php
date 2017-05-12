@@ -11,15 +11,15 @@
 
 namespace OsLab\SecurityApiBundle\Security\Authentication;
 
-use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
-use Symfony\Component\Security\Http\Authentication\AuthenticationFailureHandlerInterface;
-use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+use Symfony\Component\Security\Http\Authentication\AuthenticationFailureHandlerInterface;
 
 /**
- * Class AuthenticationFailureHandler.
+ * Strategy used to handle a failed authentication attempt.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class AuthenticationFailureHandler implements AuthenticationFailureHandlerInterface

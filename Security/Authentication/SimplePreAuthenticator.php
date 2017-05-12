@@ -13,17 +13,17 @@ namespace OsLab\SecurityApiBundle\Security\Authentication;
 
 use OsLab\SecurityApiBundle\Security\User\InMemoryApiUserProvider;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Http\Authentication\SimplePreAuthenticatorInterface;
 
 /**
- * Class SimplePreAuthenticator.
+ * Pre-authentication mechanism.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
@@ -41,13 +41,13 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
     /**
      * Constructor.
      *
-     * @param string $keyName
-     * @param string $method
+     * @param string $keyName the key name
+     * @param string $method  the method http
      */
     public function __construct($keyName, $method)
     {
         $this->keyName = $keyName;
-        $this->method  = $method;
+        $this->method = $method;
     }
 
     /**
@@ -79,7 +79,7 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
      */
     public function supportsToken(TokenInterface $token, $providerKey)
     {
-        return $token instanceof PreAuthenticatedToken && $token->getProviderKey() == $providerKey;
+        return $token instanceof PreAuthenticatedToken && $token->getProviderKey() === $providerKey;
     }
 
     /**
@@ -97,7 +97,7 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
             );
         }
 
-        $apiKey   = $token->getCredentials();
+        $apiKey = $token->getCredentials();
         $username = $userProvider->getUsernameByApiKey($apiKey);
 
         if (isset($username) === false && strlen($username) <= 0) {

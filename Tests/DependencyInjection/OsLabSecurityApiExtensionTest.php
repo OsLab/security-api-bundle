@@ -13,9 +13,9 @@ use OsLab\SecurityApiBundle\DependencyInjection\OsLabSecurityApiExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * Class OsLabSecurityApiExtensionTest
+ * Unit test for the OsLabSecurityApiExtensionTest.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class OsLabSecurityApiExtensionTest extends \PHPUnit_Framework_TestCase
@@ -25,7 +25,7 @@ class OsLabSecurityApiExtensionTest extends \PHPUnit_Framework_TestCase
         $extension = new OsLabSecurityApiExtension();
         $container = new ContainerBuilder();
 
-        $extension->load(array(), $container);
+        $extension->load([], $container);
 
         $this->assertTrue($container->hasDefinition('oslab_security_api.security.authentication.authenticator'));
     }

@@ -11,16 +11,16 @@
 
 namespace OsLab\SecurityApiBundle\Security\User;
 
-use Symfony\Component\Security\Core\User\UserProviderInterface;
+use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\User\User;
 use Symfony\Component\Security\Core\User\UserInterface;
-use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
-use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
+use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * Class InMemoryApiUserProvider.
+ * Provider in memory strategy.
  *
- * @author Michael COULLERET <michael@coulleret.pro>
+ * @author Michael COULLERET <michael.coulleret@gmail.com>
  * @author Florent DESPIERRES <orions07@gmail.com>
  */
 class InMemoryApiUserProvider implements UserProviderInterface
@@ -31,7 +31,7 @@ class InMemoryApiUserProvider implements UserProviderInterface
     private $users;
 
     /**
-     * Constructor class.
+     * Constructor.
      *
      * @param array $users The list of given users in security
      */
@@ -43,7 +43,7 @@ class InMemoryApiUserProvider implements UserProviderInterface
     /**
      * Returns a username for a given api key.
      *
-     * @param string $apiKey
+     * @param string $apiKey the api key
      *
      * @return string|null
      */
@@ -73,7 +73,6 @@ class InMemoryApiUserProvider implements UserProviderInterface
      *
      * @param UserInterface $user A UserInterface instance
      *
-     * @return void
      * @throws \LogicException
      */
     public function createUser(UserInterface $user)
@@ -104,10 +103,9 @@ class InMemoryApiUserProvider implements UserProviderInterface
     /**
      * Returns the user by given username.
      *
-     * @param string $username The username
+     * @param string $username the username
      *
      * @return User
-     * @throws UsernameNotFoundException If user whose given username does not exist.
      */
     private function getUser($username)
     {
