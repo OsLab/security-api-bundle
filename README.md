@@ -7,8 +7,7 @@ OsLab security API bundle
 [![Code Coverage](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/OsLab/security-api-bundle/?branch=master)
 [![Total Downloads](https://poser.pugx.org/OsLab/security-api-bundle/downloads)](https://packagist.org/packages/OsLab/security-api-bundle)
 [![Latest Stable Version](https://poser.pugx.org/OsLab/security-api-bundle/v/stable)](https://packagist.org/packages/OsLab/security-api-bundle)
-[![License](https://poser.pugx.org/OsLab/security-api-bundle/license)](https://packagist.org/packages/OsLab/SupervisorBundle)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/21afc65a-16de-463c-9897-e3deb06ac615/mini.png)](https://insight.sensiolabs.com/projects/21afc65a-16de-463c-9897-e3deb06ac615)
+[![License](https://poser.pugx.org/OsLab/security-api-bundle/license)](https://packagist.org/packages/oslab/security-api-bundle)
 
 Introduction
 -------------
