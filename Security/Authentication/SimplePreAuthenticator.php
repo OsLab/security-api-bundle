@@ -57,13 +57,13 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
     {
         $apiKey = null;
 
-        if ($this->method === 'header') {
+        if ('header' === $this->method) {
             $apiKey = $request->headers->get($this->keyName);
-        } elseif ($this->method === 'query') {
+        } elseif ('query' === $this->method) {
             $apiKey = $request->query->get($this->keyName);
         }
 
-        if (isset($apiKey) === false) {
+        if (false === isset($apiKey)) {
             throw new AccessDeniedException(sprintf('The key "%s" is not provided', $this->keyName));
         }
 
@@ -100,7 +100,7 @@ class SimplePreAuthenticator implements SimplePreAuthenticatorInterface
         $apiKey = $token->getCredentials();
         $username = $userProvider->getUsernameByApiKey($apiKey);
 
-        if (isset($username) === false && strlen($username) <= 0) {
+        if (false === isset($username) && strlen($username) <= 0) {
             $exception = new UsernameNotFoundException(sprintf('API Key "%s" does not exist.', $apiKey));
             $exception->setUsername($username);
 
